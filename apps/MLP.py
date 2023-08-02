@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit import caching
+# from streamlit import caching
 import streamlit.components.v1 as components
 import pandas as pd
 import tensorflow as tf
@@ -51,7 +51,7 @@ def app():
         st.line_chart(history_df.loc[:, ['loss', 'val_loss']], use_container_width=True);
         st.write("Minimum validation loss: {}".format(history_df['val_loss'].min()))
         if st.button('Clear histories'):
-            caching.clear_cache()
+            st.clear_cache()
     # model = load_model('https://raw.githubusercontent.com/liyangyang515/Spatio-Temporal-Patterns-of-NO2-and-Mobility-Through-the-Variants-of-COVID-19-in-SEA/blob/main/model/MLP_all_mobility.h5') 
     agree = st.sidebar.checkbox('I also want to see how to explain the model')
     if agree:
