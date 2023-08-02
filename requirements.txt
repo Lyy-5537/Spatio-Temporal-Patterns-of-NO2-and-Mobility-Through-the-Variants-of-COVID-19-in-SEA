@@ -2,5 +2,6 @@ plotly==5.3.1
 tensorflow==2.5.0  
 keras==2.6.0   
 scikit-learn==1.0.2 
-shap==0.40.0          
+shap==0.40.0  
+protobuf ==3.20
 matplotlib
