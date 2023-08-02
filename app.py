@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.cache_data.clear()
-
 # Custom imports 
 from multipage import MultiPage
 from apps import home, timeline, map, scatter, map3D, MLP
