@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.experimental_memo.clear()
+st.cache_data.clear()
 
 # Custom imports 
 from multipage import MultiPage
